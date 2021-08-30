@@ -2,10 +2,30 @@
   "name": "anagrams",
   "version": "1.0.0",
   "description": "finding anagrams",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch --detectOpenHandles"
   },
   "author": "David Kasznar",
-  "license": "Beerware"
+  "license": "Beerware",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.4",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "babel-jest": "^27.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.1.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.2.1"
+  }
 }
